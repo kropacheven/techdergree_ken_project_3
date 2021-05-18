@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sign Up Form</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com"> 
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    <body>
+        <header>
+            <h1>THE CODE REVIEW</h1>
+            <h2>Signup for our newsletter </h2>
+            <p>Get the latest news on how your code is doing right in yoir inbox</p>
+        </header>
+
+        <main>
+        <form action="index.html" method="post">
+         <fieldset class="field-1">
+
+             <legend>Contact information</legend>
+
+             <div class="container">
+                <label for="name">Full Name</label>   
+                <input type="text" id="name" name="user_name" placeholder="Required" required>
+             </div>
+
+             <div class="container">
+                <label for="mail">Email Address</label>  
+                <input type="email" id="mail" name="user_email" placeholder="Required" required>
+            </div>
+
+             <div class="container">
+                <label for="telephone">Phone Number</label>  
+                <input type="tel" id="telephone" name="user_telephone">
+            </div>
+
+             <div class="container">
+                <label for="address">Street Address</label>  
+                <input type="text" id="address" name="user_address" placeholder="Required" required>
+             </div>
+
+             <div class="container">
+                <label for="city">City</label>  
+                <input type="text" id="city" name="user_city" placeholder="Required" required>
+            </div>
+
+             <div class="container">
+                <label for="state">State</label>  
+                <select id="state" name="user_state">
+                    <option value="California">California</option>
+                    <option value="Colorado">Colorado</option>
+                    <option value="Montana">Montana</option>
+                    <option value="Oregon">Oregon</option>
+                    <option value="Utah">Utah</option>
+                </select>
+            </div>
+             
+             <div class="container">
+                <label for="zip">Zip Code</label>  
+                <input type="number" id="zip" name="user_zip">
+            </div>
+            <p></p>
+         </fieldset>
+
+         <fieldset>
+
+             <legend>Newsletter</legend>
+                    
+             <label>Select the newsletters you would like to recieve</label>
+
+             <input type="checkbox" id="html" value="html_news" name="user_newsletter"><label class="light" for="html">HTML News</label><br>
+             <input type="checkbox" id="css" value="css_news" name="user_newsletter"><label class="light" for="css">CSS News</label><br>
+             <input type="checkbox" id="js" value="js_news" name="user_newsletter"><label class="light" for="js">Java Script News</label>
+
+
+             <label class="label_bottom">Newsletter format</label>
+
+             <input type="radio" id="html_text" value="html_text" name="user_format">
+             <label for="html_text" class="light">HTML</label><br>
+
+             <input type="radio" id="plain_text" value="plain_text" name="user_format">
+             <label for="plain_text" class="light">Plain Text</label>
+             
+
+             <label for="topics" class="label_bottom">Other topics you'd like to hear about</label>  
+             <textarea id="topics" name="user_topics" placeholder="Required" required></textarea>
+
+         </fieldset>
+         
+         <button type="submit">Sign Up</button>
+
+        </form>
+        </main>
+
+        <footer>
+            <h3>Copyright Code Review</h3>
+        </footer>
+    </body>
+</html>
