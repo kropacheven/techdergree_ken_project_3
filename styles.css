@@ -58,24 +58,14 @@ select {
   padding: 15px;
   width: 100%;
   background-color: #e8eeef;
-  color: white;
+  color: grey;
   box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
   margin-bottom: 30px;
+  transition: opacity 3s;
 }
 
-input[type="number"] {
-  background: rgba(255,255,255,0.1);
-  border: none;
-  font-size: 16px;
-  height: auto;
-  margin: 0;
-  outline: 0;
-  padding: 15px;
+#zip {
   width: 50%;
-  background-color: #e8eeef;
-  color: white;
-  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
-  margin-bottom: 30px;
 }
 
 input[type="radio"],
@@ -144,7 +134,10 @@ label.light {
 
 input:focus, textarea:focus, select:focus {
   border: 2px solid tomato;
-  opacity: .35;
+}
+
+input:focus, textarea:focus, select:focus {
+  opacity: .3;
 }
 
 .field-1 {
@@ -185,7 +178,7 @@ legend {
     text-align: right;
   }
 
-  input[type="number"] {
+  #zip {
     width: 25%;
     margin-bottom: 15px;
     text-align: left;
